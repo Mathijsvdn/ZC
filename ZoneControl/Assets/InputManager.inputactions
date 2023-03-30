@@ -13,6 +13,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "af417551-0ee2-4382-9041-93fd00f12330",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NPCinteract",
+                    "type": "Button",
+                    "id": "6e8b034e-2aea-4010-a73e-d8134b347bf9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -85,7 +103,7 @@
                 {
                     "name": "up",
                     "id": "c6adb990-8cbb-4e84-9ee5-9fdd52a354fc",
-                    "path": "<DualShockGamepad>/rightStick/up",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -96,7 +114,7 @@
                 {
                     "name": "down",
                     "id": "d3e3425d-f3ff-47fe-a7ca-817ae5715741",
-                    "path": "<DualShockGamepad>/rightStick/down",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -107,7 +125,7 @@
                 {
                     "name": "left",
                     "id": "fb0e128b-7b0f-4f3d-978b-60c15985b5ad",
-                    "path": "<DualShockGamepad>/rightStick/left",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -118,7 +136,7 @@
                 {
                     "name": "right",
                     "id": "52e03585-c596-4959-a782-22dbf914567f",
-                    "path": "<DualShockGamepad>/rightStick/right",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -128,12 +146,45 @@
                 },
                 {
                     "name": "",
-                    "id": "56605db1-4258-4851-a696-cf8a660c20b3",
-                    "path": "<Gamepad>/rightStick",
+                    "id": "458601e9-3d24-4234-bfd9-7b96dfae4574",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d358ecd-fbeb-40a7-9c31-ebd9ac04f368",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb2f9a71-1daa-4d6b-8156-0d72991d76cc",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NPCinteract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f15eb70-b738-484e-9ffa-4ca1d0778e1a",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NPCinteract",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
