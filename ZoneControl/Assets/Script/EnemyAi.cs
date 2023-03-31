@@ -37,7 +37,7 @@ public class EnemyAi : MonoBehaviour
             if (Time.time >= attackCooldown)
             {
                 attackCooldown = Time.time + attackRate;
-                player.GetComponent<PlayerHealth>().TakeDamage(2);
+                player.GetComponent<PlayerHealth>().TakeDamage(1);
             }
         }
     }

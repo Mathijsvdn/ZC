@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject portalA;
     public GameObject portalB;
     public GameObject portalC;
+    public GameObject gameOver;
 
     private InputManager inputAttack;
 
@@ -38,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (!portalA.activeSelf && !portalB.activeSelf && !portalC.activeSelf)
         {
+            gameOver.SetActive(true);
             Destroy(gameObject);
         }
     }
@@ -47,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            gameOver.SetActive(true);
             Destroy(gameObject);
         }
     }
